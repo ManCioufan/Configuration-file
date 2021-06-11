@@ -20,19 +20,18 @@ surge_ruleset=🐟 漏网之鱼,[]FINAL
 ;设置规则标志位
 
 ;设置分组标志位
-custom_proxy_group=🔰 节点选择`select`[]🛰 IPLC-AUTO`[]🚁 RELAY-AUTO`[]DIRECT`.*
-custom_proxy_group=📲 电报吹水`select`[]🔰 节点选择`[]🛰 IPLC-AUTO`[]🚁 RELAY-AUTO
+custom_proxy_group=🔰 节点选择`select`[]🛰 IAUTO`[]DIRECT`.*
+custom_proxy_group=📲 电报吹水`select`[]🔰 节点选择`[]🛰 AUTO`
 custom_proxy_group=🎥 NETFLIX`select`(新加坡|香港|台湾)
 custom_proxy_group=▶️ YOUTUBE`select`(新加坡|香港|台湾|日本|美国)
-custom_proxy_group=🌏 国内媒体`select`[]DIRECT`[]🔰 节点选择`[]🛰 IPLC-AUTO
-custom_proxy_group=☁️ OneDrive`select`[]DIRECT`[]🚁 RELAY-AUTO`[]🔰 节点选择
-custom_proxy_group=🔍 GoogleScholar`select`[]🚁 RELAY-AUTO`[]🔰 节点选择`[]DIRECT
-custom_proxy_group=🍎 苹果服务`select`[]DIRECT`[]🔰 节点选择`[]🛰 IPLC-AUTO`[]🚁 RELAY-AUTO
+custom_proxy_group=🌏 国内媒体`select`[]DIRECT`[]🔰 节点选择`[]🛰 AUTO
+custom_proxy_group=☁️ OneDrive`select`[]DIRECT`[]🔰 节点选择
+custom_proxy_group=🔍 GoogleScholar`select`[]🔰 节点选择`[]DIRECT
+custom_proxy_group=🍎 苹果服务`select`[]DIRECT`[]🔰 节点选择`[]🛰 AUTO
 custom_proxy_group=🎵 Spotify`select`[]DIRECT`[]🔰 节点选择
 custom_proxy_group=🚀 Speedtest`select`[]DIRECT`.*
-custom_proxy_group=🚍 机场专线`select`[]🛰 IPLC-AUTO`[]🔰 节点选择`[]🚁 RELAY-AUTO`[]DIRECT
+custom_proxy_group=🚍 机场专线`select`[]🛰 AUTO`[]🔰 节点选择`[]DIRECT
 custom_proxy_group=🛑 全球拦截`select`[]REJECT`[]DIRECT
-custom_proxy_group=🐟 漏网之鱼`select`[]🔰 节点选择`[]🛰 IPLC-AUTO`[]🚁 RELAY-AUTO`[]DIRECT
-custom_proxy_group=🛰 IPLC-AUTO`url-test`(专线|AIA).*`http://www.gstatic.com/generate_204`400
-custom_proxy_group=🚁 RELAY-AUTO`url-test`(中继)`http://www.gstatic.com/generate_204`400
+custom_proxy_group=🐟 漏网之鱼`select`[]🔰 节点选择`[]🛰 AUTO`[]DIRECT
+custom_proxy_group=🛰 AUTO`url-test`(AIA|专线).*`http://www.gstatic.com/generate_204`400
 ;设置分组标志位
