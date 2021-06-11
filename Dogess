@@ -1,0 +1,38 @@
+;设置规则标志位
+surge_ruleset=DIRECT,rules/ACL4SSR/Clash/ChinaDomain.list
+surge_ruleset=🛑 全球拦截,rules/NobyDa/Surge/AdRule.list
+surge_ruleset=🛑 全球拦截,rules/ACL4SSR/Clash/BanAD.list
+surge_ruleset=🚍 机场专线,https://raw.githubusercontent.com/limbopro/Profiles4limbo/main/airports.list
+surge_ruleset=🎥 NETFLIX,rules/lhie1/Surge/Surge 3/Provider/Media/Netflix.list
+surge_ruleset=▶️ YOUTUBE,rules/lhie1/Surge/Surge 3/Provider/Media/YouTube.list
+surge_ruleset=🌏 国内媒体,rules/lhie1/Surge/Surge 3/Provider/Domestic.list
+surge_ruleset=📲 电报吹水,rules/lhie1/Surge/Surge 3/Provider/Telegram.list
+surge_ruleset=🔍 GoogleScholar,https://raw.githubusercontent.com/ColinLeeeee/ColinRule/master/GoogleScholar.list
+surge_ruleset=☁️ OneDrive,rules/ACL4SSR/Clash/OneDrive.list
+surge_ruleset=🍎 苹果服务,rules/ACL4SSR/Clash/Apple.list
+surge_ruleset=🎵 Spotify,rules/ACL4SSR/Clash/Ruleset/Spotify.list
+surge_ruleset=🚀 Speedtest,rules/lhie1/Surge/Surge 3/Provider/Speedtest.list
+surge_ruleset=🔰 节点选择,rules/lhie1/Surge/Surge 3/Provider/Proxy.list
+surge_ruleset=DIRECT,rules/ACL4SSR/Clash/ChinaCompanyIp.list
+surge_ruleset=DIRECT,rules/ACL4SSR/Clash/Ruleset/Download.list
+surge_ruleset=DIRECT,[]GEOIP,CN
+surge_ruleset=🐟 漏网之鱼,[]FINAL
+;设置规则标志位
+
+;设置分组标志位
+custom_proxy_group=🔰 节点选择`select`[]🛰 IPLC-AUTO`[]🚁 RELAY-AUTO`[]DIRECT`.*
+custom_proxy_group=📲 电报吹水`select`[]🔰 节点选择`[]🛰 IPLC-AUTO`[]🚁 RELAY-AUTO
+custom_proxy_group=🎥 NETFLIX`select`(新加坡|香港|台湾)
+custom_proxy_group=▶️ YOUTUBE`select`(新加坡|香港|台湾|日本|美国)
+custom_proxy_group=🌏 国内媒体`select`[]DIRECT`[]🔰 节点选择`[]🛰 IPLC-AUTO
+custom_proxy_group=☁️ OneDrive`select`[]DIRECT`[]🚁 RELAY-AUTO`[]🔰 节点选择
+custom_proxy_group=🔍 GoogleScholar`select`[]🚁 RELAY-AUTO`[]🔰 节点选择`[]DIRECT
+custom_proxy_group=🍎 苹果服务`select`[]DIRECT`[]🔰 节点选择`[]🛰 IPLC-AUTO`[]🚁 RELAY-AUTO
+custom_proxy_group=🎵 Spotify`select`[]DIRECT`[]🔰 节点选择
+custom_proxy_group=🚀 Speedtest`select`[]DIRECT`.*
+custom_proxy_group=🚍 机场专线`select`[]🛰 IPLC-AUTO`[]🔰 节点选择`[]🚁 RELAY-AUTO`[]DIRECT
+custom_proxy_group=🛑 全球拦截`select`[]REJECT`[]DIRECT
+custom_proxy_group=🐟 漏网之鱼`select`[]🔰 节点选择`[]🛰 IPLC-AUTO`[]🚁 RELAY-AUTO`[]DIRECT
+custom_proxy_group=🛰 IPLC-AUTO`url-test`(专线)`http://www.gstatic.com/generate_204`400
+custom_proxy_group=🚁 RELAY-AUTO`url-test`(中继)`http://www.gstatic.com/generate_204`400
+;设置分组标志位
