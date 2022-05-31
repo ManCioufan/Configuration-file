@@ -2,7 +2,8 @@
 surge_ruleset=DIRECT,rules/ACL4SSR/Clash/ChinaDomain.list
 surge_ruleset=🛑 全球拦截,rules/NobyDa/Surge/AdRule.list
 surge_ruleset=🛑 全球拦截,rules/ACL4SSR/Clash/BanAD.list
-surge_ruleset=🚍 机场专线,https://raw.githubusercontent.com/limbopro/Profiles4limbo/main/airports.list
+surge_ruleset=🚍 机场专线,https://raw.githubusercontent.com/ManCioufan/Configuration-file/master/airport.list
+surge_ruleset=🎮 STEAM,https://raw.githubusercontent.com/ManCioufan/Configuration-file/master/steam.list
 surge_ruleset=🎥 NETFLIX,rules/lhie1/Surge/Surge 3/Provider/Media/Netflix.list
 surge_ruleset=▶️ YOUTUBE,rules/lhie1/Surge/Surge 3/Provider/Media/YouTube.list
 surge_ruleset=🌏 国内媒体,rules/lhie1/Surge/Surge 3/Provider/Domestic.list
@@ -25,6 +26,7 @@ custom_proxy_group=📲 电报吹水`select`[]🔰 节点选择`[]🛰 AUTO`
 custom_proxy_group=🎥 NETFLIX`select`(新加坡|香港|台湾)
 custom_proxy_group=▶️ YOUTUBE`select`(新加坡|香港|台湾|日本|美国)
 custom_proxy_group=🌏 国内媒体`select`[]DIRECT`[]🔰 节点选择`[]🛰 AUTO
+custom_proxy_group=🎮 STEAM`select`[]🔰 节点选择`[]DIRECT
 custom_proxy_group=☁️ OneDrive`select`[]DIRECT`[]🔰 节点选择
 custom_proxy_group=🔍 GoogleScholar`select`[]🔰 节点选择`[]DIRECT
 custom_proxy_group=🍎 苹果服务`select`[]DIRECT`[]🔰 节点选择`[]🛰 AUTO
